@@ -1,0 +1,274 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+/* Ubah warna latar belakang navbar */
+.navbar {
+  background-color: #ffa500; /* Warna oranye */
+}
+
+/* Opsional: Ubah warna teks agar tetap terlihat jelas */
+.navbar a {
+  color: #ffffff; /* Warna teks putih */
+}
+
+.navbar a:hover {
+  color: #959292;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.welcome-text {
+  color: white;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-text {
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Warna latar belakang accordion */
+.accordion-item {
+  background-color: #ffe5b4; /* Oranye muda */
+  border: 1px solid #ffa500; /* Oranye */
+}
+
+/* Warna header accordion (judul yang bisa diklik) */
+.accordion-button {
+  background-color: #ffa500; /* Oranye */
+  color: #ffffff; /* Teks putih */
+  border: none;
+}
+
+/* Hover efek pada header accordion */
+.accordion-button:hover {
+  background-color: #ffb347; /* Oranye lebih terang */
+  color: #000000; /* Teks hitam */
+}
+
+/* Warna konten accordion */
+.accordion-body {
+  background-color: #fff3e0; /* Oranye sangat muda */
+  color: #333333; /* Teks abu gelap */
+}
+
+/* Progress Bar */
+#progress {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  background-color: #28a745;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Forms */
+form input[type="text"] {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: rgb(9, 9, 9);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* About Section (Cards) */
+#about .card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#about .card h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#about .card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Materi Section */
+h1 {
+  text-align: center;
+  color: #ffa500; /* Oranye */
+
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fff3e0; /* Oranye sangat muda */
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #ffe5b4; /* Oranye muda */
+  border: 2px solid #ffa500; /* Oranye */
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #ff8c00; /* Warna oranye yang lebih gelap */
+  margin: 10px 0;
+}
+
+.card p {
+  color: #333; /* Teks abu gelap */
+  padding: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffa500; /* Oranye */
+  color: #ffffff; /* Teks putih */
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffb347; /* Oranye lebih terang */
+}
+
+/* Quiz Section Styles */
+
+/* Judul Kuis */
+#quiz h2 {
+  color: #ffa500; /* Oranye cerah */
+  background-color: #fff4e0; /* Oranye muda */
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Label Pertanyaan */
+#quiz label {
+  color: #ff8c00; /* Oranye gelap */
+  font-weight: bold;
+}
+
+/* Tombol Kirim */
+#quiz .btn-primary {
+  background-color: #ffa500; /* Oranye cerah */
+  border-color: #ff8c00; /* Oranye gelap */
+}
+
+#quiz .btn-primary:hover {
+  background-color: #ff8c00; /* Oranye gelap */
+  border-color: #ffa500; /* Oranye cerah */
+}
+
+/* Form Input dan Select */
+#quiz .form-control,
+#quiz .form-select {
+  border: 2px solid #ff8c00; /* Oranye gelap */
+  border-radius: 5px;
+}
+
+#quiz .form-control:focus,
+#quiz .form-select:focus {
+  border-color: #ffa500; /* Oranye cerah */
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+/* Form Radio Button */
+#quiz .form-check-label {
+  color: #ff8c00; /* Oranye gelap */
+}
+.text-orange {
+  color: orange;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panduan Interaktif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .bg-orange {
+        background-color: orange;
+      }
+      .hero-section {
+        position: relative;
+        text-align: center;
+      }
+      .background-image {
+        width: 100%;
+        height: auto;
+        opacity: 0.8;
+      }
+      .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/rk logo.png" alt="Logo" width="40" height="30" class="me-2" />
+          Ruang Kode
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#materi">Materi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quiz">Quis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kemajuan">Kemajuan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <img src="images/header.jpg" alt="Background Image" class="background-image" />
+      <div class="overlay text-white">
+        <h1 class="welcome-text">Selamat Datang Di Ruang Kode</h1>
+        <p>Belajar dengan cara yang menyenangkan dan interaktif.</p>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4" style="color: orange">About</h2>
+
+        <div class="accordion" id="accordionAbout">
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Apa Itu Website Ini?</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionAbout">
+              <div class="accordion-body">Website ini dirancang untuk membantu pengguna belajar dengan cara yang menyenangkan dan interaktif, dengan berbagai materi edukasi.</div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Apa Tujuan Website Ini?</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionAbout">
+              <div class="accordion-body">Tujuan dari website ini adalah memberikan akses mudah ke materi edukasi dengan pendekatan interaktif, sehingga memotivasi pengguna untuk belajar lebih efektif.</div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Siapa yang Bisa Menggunakan Website Ini?</button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionAbout">
+              <div class="accordion-body">Website ini dirancang untuk semua kalangan, mulai dari pelajar, mahasiswa, hingga profesional yang ingin memperluas wawasan.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materi Section -->
+    <section id="materi" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4" style="color: orange">Materi</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="pemrograman.html" class="text-decoration-none text-dark">
+              <div class="card">
+                <img src="images/ilustrasipemrograman.jpeg" alt="Pemrograman" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Pemrograman</h5>
+                  <p class="card-text">Pelajari dasar-dasar pemrograman dari logika hingga pembuatan aplikasi.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="desain-grafis.html" class="text-decoration-none text-dark">
+              <div class="card">
+                <img src="images/desaingrafis.jpg" alt="Desain Grafis" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Desain Grafis</h5>
+                  <p class="card-text">Pahami prinsip desain dan buat karya visual yang menarik.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="matematika.html" class="text-decoration-none text-dark">
+              <div class="card">
+                <img src="images/matematika.jpg" alt="Matematika" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Matematika</h5>
+                  <p class="card-text">Belajar konsep matematika dengan pendekatan interaktif.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <div class="container my-5">
+      <div id="quiz">
+        <h2 class="mb-4 text-center">Kuis Interaktif</h2>
+        <form id="quizForm">
+          <!-- Pertanyaan 1 -->
+          <div class="mb-4">
+            <label for="question1" class="form-label">1. Apakah Anda memahami materi Pemrograman?</label>
+            <select id="question1" class="form-select" required>
+              <option value="">Pilih jawaban</option>
+              <option value="Ya">Ya</option>
+              <option value="Tidak">Tidak</option>
+              <option value="Sedikit">Sedikit</option>
+            </select>
+          </div>
+
+          <!-- Pertanyaan 2 -->
+          <div class="mb-4">
+            <label for="question2" class="form-label">2. Berapa jam per hari yang Anda alokasikan untuk belajar?</label>
+            <input type="number" id="question2" class="form-control" placeholder="Masukkan jumlah jam" required />
+          </div>
+
+          <!-- Pertanyaan 3 -->
+          <div class="mb-4">
+            <label for="question3" class="form-label">3. Pilih materi yang paling Anda sukai:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question3" id="option1" value="Pemrograman" required />
+              <label class="form-check-label" for="option1">Pemrograman</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question3" id="option2" value="Desain Grafis" />
+              <label class="form-check-label" for="option2">Desain Grafis</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question3" id="option3" value="Matematika" />
+              <label class="form-check-label" for="option3">Matematika</label>
+            </div>
+          </div>
+
+          <!-- Pertanyaan 4 -->
+          <div class="mb-4">
+            <label for="question4" class="form-label">4. Apa pendapat Anda tentang modul pembelajaran ini?</label>
+            <textarea id="question4" class="form-control" rows="4" placeholder="Tulis jawaban Anda di sini..." required></textarea>
+          </div>
+
+          <!-- Tombol Kirim -->
+          <button type="submit" class="btn btn-primary d-block mx-auto">Kirim Jawaban</button>
+        </form>
+        <div id="alertMessage" class="alert alert-success d-none" role="alert">Jawaban Anda telah dikirim!</div>
+      </div>
+    </div>
+
+    <!-- Kemajuan Section -->
+    <section id="kemajuan" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 text-orange">Kemajuan Anda</h2>
+
+        <div class="row">
+          <!-- Modul Pemrograman -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Pemrograman</h5>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                <p class="card-text">Anda telah menyelesaikan 80% dari modul Pemrograman. Lanjutkan ke bagian berikutnya untuk menyelesaikan modul ini.</p>
+                <a href="pemrograman.html" class="btn btn-primary btn-sm">Lihat Modul</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modul Desain Grafis -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Desain Grafis</h5>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+                <p class="card-text">Anda telah menyelesaikan 60% dari modul Desain Grafis. Perhatikan topik berikutnya untuk meningkatkan kemampuan Anda.</p>
+                <a href="desain-grafis.html" class="btn btn-primary btn-sm">Lihat Modul</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modul Matematika -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Matematika</h5>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+                <p class="card-text">Anda telah menyelesaikan 40% dari modul Matematika. Perbanyak latihan untuk meningkatkan pemahaman.</p>
+                <a href="matematika.html" class="btn btn-primary btn-sm">Lihat Modul</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Informasi Tambahan -->
+        <div class="row mt-5">
+          <div class="col-md-12 text-center">
+            <p>Semangat terus! Lanjutkan pembelajaran Anda dan selesaikan modul untuk mendapatkan sertifikat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
